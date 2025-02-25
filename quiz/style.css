@@ -1,0 +1,44 @@
+body {
+    background-color: cornflowerblue;
+    font-family: Arial;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game {
+    width: 100%;
+    max-width: 700px;
+}
+
+#title {
+    background-color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#game ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.alternative {
+    background-color: lightgrey;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.alternative:hover {
+    opacity: 70%;
+}
+
+#result, #score {
+    color: white;
+}
+
+#result {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
