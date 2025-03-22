@@ -37,15 +37,14 @@ a:hover {
 
 /* === Navigation === */
 .navbar {
-    background-color: #007bff;
+    background-color: lightgrey;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .navbar a {
-    color: white;
     padding: 8px 12px;
 }
 
