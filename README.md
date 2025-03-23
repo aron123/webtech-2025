@@ -1,3 +1,5 @@
-# WEB technológia alapjai (2024/2025 II. félév)
+# Web technológia alapjai (2024/2025 II. félév)
 
-* [CSS példaprojekt](https://github.com/aron123/webtech-2025/tree/master/quiz)
+4\. féléves mérnökinformatikus BSc hallgatók részére.
+
+Tanszéki oktatási oldal: https://edu.iit.uni-miskolc.hu/tanszek:oktatas:web_technologia_alapjai
