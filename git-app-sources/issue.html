@@ -56,7 +56,8 @@
             try {
                 const res = await fetch(`https://api.github.com/repos/${repoName}/issues/${issueNumber}`, {
                     headers: {
-                        'Authorization': 'Bearer ' + GITHUB_ACCESS_TOKEN
+                        'Authorization': 'Bearer ' + GITHUB_ACCESS_TOKEN,
+                        'Accept': 'application/vnd.github.html+json'
                     }
                 });
 
@@ -71,7 +72,7 @@
                 userElem.innerHTML = `<strong>${issue.user.login} írta ${new Date(issue.created_at).toLocaleString()}-kor:</strong>`;
 
                 const bodyElem = document.querySelector('#body');
-                body.textContent = issue.body;
+                body.innerHTML = issue.body_html;
             } catch (err) {
                 handleError(err);
             }
@@ -81,7 +82,8 @@
             try {
                 const res = await fetch(`https://api.github.com/repos/${repoName}/issues/${issueNumber}/comments`, {
                     headers: {
-                        'Authorization': 'Bearer ' + GITHUB_ACCESS_TOKEN
+                        'Authorization': 'Bearer ' + GITHUB_ACCESS_TOKEN,
+                        'Accept': 'application/vnd.github.html+json'
                     }
                 });
 
