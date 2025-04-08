@@ -119,7 +119,7 @@
 
                 const issuesList = document.querySelector('#issues');
                 for (const issue of data) {
-                    const issueHtml = `<li>${issue.title}</li>`;
+                    const issueHtml = `<li><a href="issue.html?repo=${repoName}&issue=${issue.number}">${issue.title}</a></li>`;
                     issuesList.innerHTML += issueHtml;
                 }
 
