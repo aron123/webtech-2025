@@ -1,4 +1,11 @@
-const GITHUB_ACCESS_TOKEN = 'PASTE-YOUR-TOKEN-HERE!';
+let accessToken = sessionStorage.getItem('accessToken');
+
+if (!accessToken) {
+    accessToken = prompt('Adja meg az access tokent:');
+    sessionStorage.setItem('accessToken', accessToken);
+}
+
+const GITHUB_ACCESS_TOKEN = accessToken;
 
 function loadNavigation() {
     fetch('nav.html')
